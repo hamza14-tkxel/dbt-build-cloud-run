@@ -1,0 +1,25 @@
+{
+  "name": "dbt-build",
+  "version": "1.0.0",
+  "description": "A stub for client admin",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node src/index.js",
+    "start:dev": "NODE_ENV=development node src/index.js 0.0.0.0",
+    "test": "snyk test"
+  },
+  "author": "Sproutward",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^3.27.0",
+    "utf8": "^3.0.0",
+    "@google-cloud/pubsub": "^2.18.5",
+    "axios": "^0.25.0",
+    "@google-cloud/firestore": "^5.0.2",
+    "promisify-child-process": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "snyk": "^1.842.0"
+  }
+}
